@@ -1,4 +1,4 @@
-name: vsc_tasks_json
+name: vsc_tasks_mcp
 version: 1.0.0
 description: MCP server for VSCode tasks.json
 
@@ -21,4 +21,4 @@ dev_dependencies:
   test: ^1.25.0
 
 executables:
-  mcp:
+  vsc_tasks_mcp:

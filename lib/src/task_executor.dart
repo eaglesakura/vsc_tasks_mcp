@@ -1,8 +1,8 @@
 import "dart:convert";
 import "dart:io";
 
-import "package:vsc_tasks_json/src/logger.dart";
-import "package:vsc_tasks_json/src/task/task_definition.dart";
+import "package:vsc_tasks_mcp/src/logger.dart";
+import "package:vsc_tasks_mcp/src/task/task_definition.dart";
 
 /// タスク実行の結果
 class TaskExecutionResult {

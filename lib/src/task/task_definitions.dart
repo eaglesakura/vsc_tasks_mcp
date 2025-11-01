@@ -1,8 +1,8 @@
 import "dart:io";
 
 import "package:meta/meta.dart";
-import "package:vsc_tasks_json/src/parser/tasks_json_parser.dart";
-import "package:vsc_tasks_json/src/task/task_definition.dart";
+import "package:vsc_tasks_mcp/src/parser/tasks_json_parser.dart";
+import "package:vsc_tasks_mcp/src/task/task_definition.dart";
 
 /// タスク一覧.
 @internal

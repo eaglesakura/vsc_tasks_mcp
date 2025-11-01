@@ -2,13 +2,13 @@ import "dart:convert";
 import "dart:io";
 
 import "package:meta/meta.dart";
-import "package:vsc_tasks_json/src/parser/dto/input_definition_dto.dart";
-import "package:vsc_tasks_json/src/parser/dto/mcp_options_dto.dart";
-import "package:vsc_tasks_json/src/parser/dto/task_definition_dto.dart";
-import "package:vsc_tasks_json/src/parser/dto/tasks_json_dto.dart";
-import "package:vsc_tasks_json/src/task/input_definition.dart";
-import "package:vsc_tasks_json/src/task/mcp_options.dart";
-import "package:vsc_tasks_json/src/task/task_definition.dart";
+import "package:vsc_tasks_mcp/src/parser/dto/input_definition_dto.dart";
+import "package:vsc_tasks_mcp/src/parser/dto/mcp_options_dto.dart";
+import "package:vsc_tasks_mcp/src/parser/dto/task_definition_dto.dart";
+import "package:vsc_tasks_mcp/src/parser/dto/tasks_json_dto.dart";
+import "package:vsc_tasks_mcp/src/task/input_definition.dart";
+import "package:vsc_tasks_mcp/src/task/mcp_options.dart";
+import "package:vsc_tasks_mcp/src/task/task_definition.dart";
 
 /// tasks.jsonをパースするクラス
 @internal

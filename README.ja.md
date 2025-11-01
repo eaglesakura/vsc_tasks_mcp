@@ -25,7 +25,7 @@ Cursorの設定ファイル（`~/.cursor/mcp.json`）に以下を追加する：
   "mcpServers": {
     "vsc_tasks_json": {
       "command": "dart",
-      "args": ["run", "vsc_tasks_json:mcp"],
+      "args": ["run", "vsc_tasks_json"],
       "env": {}
     }
   }
@@ -45,7 +45,7 @@ MCPサーバーは以下の方法でプロジェクトルートを検出する�
 プロジェクトルートから以下のコマンドでMCPサーバーを起動できる：
 
 ```bash
-dart run vsc_tasks_json:mcp
+dart run vsc_tasks_json
 ```
 
 ## tasks.jsonの設定
@@ -125,9 +125,9 @@ dart run vsc_tasks_json:mcp
 
 MCPサーバーは実行ログを以下の場所に出力する：
 
-- **サーバーログ**: `build/vsc_tasks_json/mcp_server.log`
+- **サーバーログ**: `build/vsc_tasks_mcp/mcp_server.log`
   - サーバーの起動、初期化、エラーを記録
-- **ツールログ**: `build/vsc_tasks_json/{tool_name}.log`
+- **ツールログ**: `build/vsc_tasks_mcp/{tool_name}.log`
   - 各ツールの実行ごとに個別のログファイルを作成
   - 実行コマンド、標準出力、標準エラー出力、終了コードを記録
 
@@ -143,7 +143,7 @@ cat build/vsc_tasks_json/mcp_server.log
 
 ```bash
 # app_buildツールのログを確認
-cat build/vsc_tasks_json/app_build.log
+cat build/vsc_tasks_mcp/app_build.log
 ```
 
 ## トラブルシューティング
@@ -167,7 +167,7 @@ cat build/vsc_tasks_json/app_build.log
 
 ```bash
 # ログファイルの確認例
-cat /path/to/project/build/vsc_tasks_json/app_build.log
+cat /path/to/project/build/vsc_tasks_mcp/app_build.log
 ```
 
 ### プロジェクトルートが検出されない
@@ -180,7 +180,7 @@ cat /path/to/project/build/vsc_tasks_json/app_build.log
 - サーバーログで検出されたプロジェクトルートを確認する
 
 ```bash
-cat build/vsc_tasks_json/mcp_server.log
+cat build/vsc_tasks_mcp/mcp_server.log
 ```
 
 ### 変数が置換されない

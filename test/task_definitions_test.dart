@@ -1,7 +1,7 @@
 import "dart:io";
 
 import "package:test/test.dart";
-import "package:vsc_tasks_json/src/task/task_definitions.dart";
+import "package:vsc_tasks_mcp/src/task/task_definitions.dart";
 
 void main() {
   group("TaskDefinitions.fromTaskJson", () {

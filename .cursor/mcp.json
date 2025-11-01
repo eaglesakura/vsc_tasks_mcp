@@ -1,11 +1,11 @@
 {
     "mcpServers": {
-        "vsc_tasks_json": {
+        "vsc_tasks_mcp": {
             "command": "fvm",
             "args": [
                 "dart",
                 "run",
-                "vsc_tasks_json:mcp"
+                "vsc_tasks_mcp"
             ],
             "env": {}
         },

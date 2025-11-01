@@ -3,8 +3,8 @@ import "dart:io";
 import "package:dart_mcp/server.dart";
 import "package:dart_mcp/stdio.dart";
 import "package:path/path.dart" as p;
-import "package:vsc_tasks_json/src/logger.dart";
-import "package:vsc_tasks_json/src/mcp_server.dart";
+import "package:vsc_tasks_mcp/src/logger.dart";
+import "package:vsc_tasks_mcp/src/mcp_server.dart";
 
 /// MCPサーバーのエントリーポイント
 Future<void> main() async {
@@ -12,7 +12,7 @@ Future<void> main() async {
   final projectRoot = _findProjectRoot();
   final serverLogger = Logger(
     projectRoot: projectRoot,
-    packageName: "vsc_tasks_json",
+    packageName: "vsc_tasks_mcp",
     name: "mcp_server",
   );
   serverLogger.info("Finding project root...");

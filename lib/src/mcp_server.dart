@@ -4,10 +4,10 @@ import "dart:io";
 
 import "package:dart_mcp/server.dart";
 import "package:path/path.dart" as p;
-import "package:vsc_tasks_json/src/logger.dart";
-import "package:vsc_tasks_json/src/task/task_definition.dart";
-import "package:vsc_tasks_json/src/task/task_definitions.dart";
-import "package:vsc_tasks_json/src/task_executor.dart";
+import "package:vsc_tasks_mcp/src/logger.dart";
+import "package:vsc_tasks_mcp/src/task/task_definition.dart";
+import "package:vsc_tasks_mcp/src/task/task_definitions.dart";
+import "package:vsc_tasks_mcp/src/task_executor.dart";
 
 /// VSCode tasks.json用のMCPサーバー実装
 final class VscTasksJsonServer extends MCPServer with ToolsSupport {
@@ -102,7 +102,7 @@ final class VscTasksJsonServer extends MCPServer with ToolsSupport {
 
     // ツール用ロガーを作成
     final toolLogger = Logger(
-      packageName: "vsc_tasks_json",
+      packageName: "vsc_tasks_mcp",
       projectRoot: projectRoot,
       name: request.name,
     );

@@ -1,5 +1,5 @@
 import "package:meta/meta.dart";
-import "package:vsc_tasks_json/src/task/mcp_options.dart";
+import "package:vsc_tasks_mcp/src/task/mcp_options.dart";
 
 /// tasks.jsonで定義されているタスクの定義
 @internal
