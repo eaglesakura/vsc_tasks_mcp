@@ -1,5 +1,5 @@
 name: vsc_tasks_mcp
-version: 1.0.0
+version: 1.0.0+1
 description: MCP server that exposes VSCode tasks.json definitions as executable tools for AI agents
 repository: https://github.com/eaglesakura/vsc_tasks_mcp/
 
