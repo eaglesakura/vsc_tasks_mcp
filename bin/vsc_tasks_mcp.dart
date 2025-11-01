@@ -10,14 +10,14 @@ import "package:vsc_tasks_mcp/src/metadata.dart";
 /// MCPサーバーのエントリーポイント
 Future<void> main() async {
   // プロジェクトルートを取得
+  stderr.writeln("Finding project root...");
+  stderr.writeln("  - cd: ${Directory.current.path}");
   final projectRoot = _findProjectRoot();
   final serverLogger = Logger(
     projectRoot: projectRoot,
     packageName: mcpName,
     name: "server",
   );
-  serverLogger.info("Finding project root...");
-  serverLogger.info("  - cd: ${Directory.current.path}");
   serverLogger.info("  - project: $projectRoot");
 
   // stdioチャネルを作成
