@@ -34,7 +34,7 @@ Add the following to Cursor's configuration file (`.cursor/mcp.json`):
 ```
 
 ### Installation
-<!-- 
+
 #### Using `dart pub global activate`
 
 To install globally:
@@ -49,13 +49,18 @@ When installed using this method, the Cursor configuration file (`.cursor/mcp.js
 {
   "mcpServers": {
     "vsc_tasks_json": {
-      "command": "vsc_tasks_mcp",
-      "args": [],
+      "command": "dart",
+      "args": [
+        "pub",
+        "global",
+        "run",
+        "vsc_tasks_mcp"
+      ],
       "env": {}
     }
   }
 }
-``` -->
+```
 
 #### Adding to `pubspec.yaml`
 

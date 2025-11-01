@@ -34,7 +34,7 @@ Cursorの設定ファイル（`.cursor/mcp.json`）に以下を追加する：
 ```
 
 ### インストール
-<!-- 
+
 #### `dart pub global activate` を使用する
 
 グローバルにインストールする場合：
@@ -49,13 +49,18 @@ dart pub global activate vsc_tasks_mcp
 {
   "mcpServers": {
     "vsc_tasks_json": {
-      "command": "vsc_tasks_mcp",
-      "args": [],
+      "command": "dart",
+      "args": [
+        "pub",
+        "global",
+        "run",
+        "vsc_tasks_mcp"
+      ],
       "env": {}
     }
   }
 }
-``` -->
+```
 
 #### `pubspec.yaml` に追加する
 
