@@ -2,6 +2,9 @@
 
 本パッケージは、VSCodeの`.vscode/tasks.json`に定義されているタスクをAI Agentから実行可能にするMCPサーバーである。
 
+* [README(English)](./README.md)
+* [README(日本語)](./README.ja.md)
+
 ## 概要
 
 `tasks.json`のタスク定義に`options.mcp`プロパティを追加することで、そのタスクが個別のMCPツールとして登録される。各タスクは独立したツールとして呼び出すことができ、必要な変数は入力スキーマとして自動的に定義される。

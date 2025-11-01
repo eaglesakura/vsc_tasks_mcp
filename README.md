@@ -2,6 +2,9 @@
 
 This package is an MCP server that enables AI agents to execute tasks defined in VSCode's `.vscode/tasks.json`.
 
+* [README(English)](./README.md)
+* [README(日本語)](./README.ja.md)
+
 ## Overview
 
 By adding the `options.mcp` property to task definitions in `tasks.json`, those tasks are registered as individual MCP tools. Each task can be called as an independent tool, and required variables are automatically defined as input schemas.
