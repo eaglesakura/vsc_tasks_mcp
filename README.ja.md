@@ -4,8 +4,6 @@
 
 ## 概要
 
-[dart_mcp](https://pub.dev/packages/dart_mcp)パッケージを使用して実装されたMCPサーバーである。
-
 `tasks.json`のタスク定義に`options.mcp`プロパティを追加することで、そのタスクが個別のMCPツールとして登録される。各タスクは独立したツールとして呼び出すことができ、必要な変数は入力スキーマとして自動的に定義される。
 
 ## 前提条件
@@ -18,7 +16,7 @@
 
 ### MCPサーバーの登録
 
-Cursorの設定ファイル（`~/.cursor/mcp.json`）に以下を追加する：
+Cursorの設定ファイル（`.cursor/mcp.json`）に以下を追加する：
 
 ```json
 {
@@ -26,6 +24,59 @@ Cursorの設定ファイル（`~/.cursor/mcp.json`）に以下を追加する：
     "vsc_tasks_json": {
       "command": "dart",
       "args": ["run", "vsc_tasks_json"],
+      "env": {}
+    }
+  }
+}
+```
+
+### インストール
+
+#### `dart pub global activate` を使用する
+
+グローバルにインストールする場合：
+
+```bash
+dart pub global activate vsc_tasks_mcp
+```
+
+この方法でインストールした場合、Cursorの設定ファイル（`.cursor/mcp.json`）は以下のようになる：
+
+```json
+{
+  "mcpServers": {
+    "vsc_tasks_json": {
+      "command": "vsc_tasks_mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}
+```
+
+#### `pubspec.yaml` に追加する
+
+プロジェクトの依存関係として追加する場合、`pubspec.yaml`に以下を追加：
+
+```yaml
+dependencies:
+  vsc_tasks_mcp: ^1.0.0
+```
+
+その後、依存関係をインストール：
+
+```bash
+dart pub get
+```
+
+この方法でインストールした場合、Cursorの設定ファイル（`.cursor/mcp.json`）は以下のようになる：
+
+```json
+{
+  "mcpServers": {
+    "vsc_tasks_json": {
+      "command": "dart",
+      "args": ["run", "vsc_tasks_mcp"],
       "env": {}
     }
   }
