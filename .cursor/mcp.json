@@ -1,0 +1,21 @@
+{
+    "mcpServers": {
+        "vsc_tasks_json": {
+            "command": "fvm",
+            "args": [
+                "dart",
+                "run",
+                "vsc_tasks_json:mcp"
+            ],
+            "env": {}
+        },
+        "dart": {
+            "command": "fvm",
+            "args": [
+                "dart",
+                "mcp-server",
+                "--force-roots-fallback"
+            ]
+        }
+    }
+}

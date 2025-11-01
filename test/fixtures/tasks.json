@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Task with MCP",
+      "command": "echo",
+      "args": ["Hello MCP"],
+      "options": {
+        "mcp": {
+          "tool": "test_tool",
+          "description": "Test tool description"
+        }
+      }
+    },
+    {
+      "label": "Task without MCP",
+      "command": "echo",
+      "args": ["Hello"]
+    }
+  ],
+  "inputs": [
+    {
+      "id": "testInput",
+      "type": "promptString",
+      "description": "Test input"
+    }
+  ]
+}
+

@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "inputs": [],
+    "tasks": [
+        {
+            "label": "build_runner",
+            "type": "shell",
+            "command": "fvm",
+            "args": [
+                "dart",
+                "run",
+                "build_runner",
+                "build",
+                "--delete-conflicting-outputs"
+            ],
+            "options": {
+                "mcp": {
+                    "tool": "workspace_build_runner",
+                    "description": "run build_runner with project settings."
+                }
+            }
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "fvm",
+            "args": [
+                "dart",
+                "test",
+            ],
+            "options": {
+                "mcp": {
+                    "tool": "workspace_test",
+                    "description": "run test with project settings."
+                }
+            }
+        }
+    ]
+}

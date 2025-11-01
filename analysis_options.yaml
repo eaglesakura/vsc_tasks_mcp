@@ -1,0 +1,85 @@
+include: package:lints/recommended.yaml
+
+formatter:
+  trailing_commas: preserve
+
+analyzer:
+  errors:
+    directives_ordering: error
+    depend_on_referenced_packages: error
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.gen.dart"
+  language:
+    strict-casts: true
+    strict-raw-types: false
+
+linter:
+  rules:
+    - always_declare_return_types
+    - always_put_control_body_on_new_line
+    - always_use_package_imports
+    - avoid_bool_literals_in_conditional_expressions
+    - avoid_empty_else
+    - avoid_print
+    - avoid_returning_null_for_void
+    - avoid_unnecessary_containers
+    - await_only_futures
+    - camel_case_extensions
+    - camel_case_types
+    - cancel_subscriptions
+    - directives_ordering
+    - empty_statements
+    - file_names
+    - hash_and_equals
+    - implementation_imports
+    - library_prefixes
+    - no_adjacent_strings_in_list
+    - no_duplicate_case_values
+    - non_constant_identifier_names
+    - only_throw_errors
+    - overridden_fields
+    - package_names
+    - parameter_assignments
+    - prefer_const_constructors
+    - prefer_const_constructors_in_immutables
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    - prefer_final_in_for_each
+    - prefer_function_declarations_over_variables
+    - prefer_if_elements_to_conditional_expressions
+    - prefer_initializing_formals
+    - prefer_int_literals
+    - prefer_interpolation_to_compose_strings
+    - prefer_is_not_operator
+    - prefer_mixin
+    - prefer_null_aware_operators
+    - prefer_double_quotes
+    - prefer_typing_uninitialized_variables
+    - prefer_void_to_null
+    - provide_deprecation_message
+    - require_trailing_commas
+    - sized_box_for_whitespace
+    - sort_unnamed_constructors_first
+    - test_types_in_equals
+    - throw_in_finally
+    - type_annotate_public_apis
+    - unawaited_futures
+    - unnecessary_await_in_return
+    - unnecessary_brace_in_string_interps
+    - unnecessary_getters_setters
+    - unnecessary_new
+    - unnecessary_null_aware_assignments
+    - unnecessary_overrides
+    - unnecessary_parenthesis
+    - unnecessary_raw_strings
+    - unnecessary_statements
+    - unnecessary_string_escapes
+    - unnecessary_string_interpolations
+    - use_is_even_rather_than_modulo
+    - use_named_constants
+    - use_raw_strings
+    - use_setters_to_change_properties
+    - use_string_buffers
+    - void_checks
